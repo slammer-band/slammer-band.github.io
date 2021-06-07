@@ -44,20 +44,35 @@
       background-color: #111;
     }
 
-    .title {
-      font-family: 'Amatic SC', cursive;
-      color: #efefef;
+    .content {
+      text-align:center;
       position: fixed;
       top: 50%;
       left: 50%;
       /* bring your own prefixes */
       transform: translate(-50%, -50%);
     }
+
+    .title {
+      font-family: 'Amatic SC', cursive;
+      font-size:  3em;
+      color: #efefef;
+    }
+
+    .spotify {
+      color: #efefef;
+      font-size: .75em;
+      text-decoration: none;
+    }
+
   </style>
 </head>
 <body>
   <div class="wrapper">
-    <h1 class="title">SLAMMER</h1>
+    <div class="content">
+      <h1 class="title">SLAMMER</h1>
+      <a class="spotify" href="https://open.spotify.com/artist/0ALDwhf85oZxURyML49K9y?si=qoaeF0iGToO1f2kUduLfsQ">Listen on Spotify</a>
+    </div>
   </div>
 </body>
 </html>
