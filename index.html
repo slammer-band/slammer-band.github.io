@@ -7,7 +7,18 @@
   <meta name="description" content="Slammer">
   <meta name="author" content="dan">
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BXFBVGPYM9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-BXFBVGPYM9');
+  </script>
   <style>
     html {
       box-sizing: border-box;
@@ -59,9 +70,19 @@
       color: #efefef;
     }
 
-    .spotify {
+    .social-media {
+      margin-top: .5em;
+    }
+
+
+    .social-media li {
+      display: inline-block;
+      padding: 5px;
+    }
+
+    .social-media a {
       color: #efefef;
-      font-size: .75em;
+      font-size: 1.5em;
       text-decoration: none;
     }
 
@@ -71,8 +92,24 @@
   <div class="wrapper">
     <div class="content">
       <h1 class="title">SLAMMER</h1>
-      <a class="spotify" href="https://open.spotify.com/artist/0ALDwhf85oZxURyML49K9y?si=qoaeF0iGToO1f2kUduLfsQ">Listen on Spotify</a>
-    </div>
+      <ul class="social-media">
+        <li>
+          <a title="Facebook" target="_blank" href="https://www.facebook.com/slammersweden">
+            <i class="fa fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a title="Youtube" target="_blank" href="https://www.youtube.com/channel/UCUCjR1zrPoj-rjAWHI5dz1w">
+            <i class="fa fa-youtube-play"></i>
+          </a>
+        </li>
+        <li>
+          <a title="Spotify" target="_blank" href="https://open.spotify.com/artist/0ALDwhf85oZxURyML49K9y?si=qoaeF0iGToO1f2kUduLfsQ">
+            <i class="fa fa-spotify"></i>
+          </a>
+        </li>
+      </ul>
+   </div>
   </div>
 </body>
 </html>
