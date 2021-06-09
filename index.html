@@ -33,7 +33,6 @@
       margin: 0;
       padding: 0;
       font-weight: normal;
-      font-family: "Courier New", monospace;
     }
 
     ol, ul {
@@ -45,121 +44,72 @@
       height: auto;
     }
 
-    .section1 {
-      position: absolute;
+    .wrapper {
+      position:fixed;
+      padding:0;
+      margin:0;
+      top:0;
+      left:0;
       width: 100%;
-      height: 50%;
-      background-image: url(slammer.jpeg);
-      background-size: cover;
-      background-color: #111;}
-      
-      .section1 .head {
-        text-align:center;
-        position:  relative;
-        margin: auto;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);}
-
-        .section1 .head .title {
-          font-size: 3em;
-          color: #fff;
-          display: inline-block;
-          background: #111;
-          padding: 0 .3em;}
-
-        .section1 .head .social-media {
-          margin-top: .5em;}
-
-          .section1 .head .social-media li {
-            display: inline-block;
-            padding: 5px;}
-
-            .section1 .head .social-media li a {
-              color: #000;
-              font-size: 1.5em;
-              text-decoration: none;}
-
-
-    .section2 {
-      position: absolute;
-      top: 50%;
-      width: 100%;
-      height: 50%;
-      background: yellow;}
-
-      .section2 .info {
-        text-align:center;
-        position:  relative;
-        margin: auto;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);}
-
-        .section2 .info h2 {
-          font-size: 2em;
-          color: #111;
-          display: inline-block;
-          background: #fff;
-          padding: 0 .3em;}
-
-    .section3 {
-      position: absolute;
-      top: 100%;
-      width: 100%;
-      height: 500px;
-      background: orange;
+      height: 100%;
+      background-color: #111;
     }
+
+    .content {
+      text-align:center;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      /* bring your own prefixes */
+      transform: translate(-50%, -50%);
+    }
+
+    .title {
+      font-family: 'Amatic SC', cursive;
+      font-size:  3em;
+      color: #efefef;
+    }
+
+    .social-media {
+      margin-top: .5em;
+    }
+
+
+    .social-media li {
+      display: inline-block;
+      padding: 5px;
+    }
+
+    .social-media a {
+      color: #efefef;
+      font-size: 1.5em;
+      text-decoration: none;
+    }
+
   </style>
 </head>
 <body>
-  <div class="container">
-    <section class="section1">
-      <div class="head">
-        <h1 class="title">SLAMMER</h1>
-        <ul class="social-media">
-          <li>
-            <a title="Facebook" target="_blank" href="https://www.facebook.com/slammersweden">
-              <i class="fa fa-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a title="Youtube" target="_blank" href="https://www.youtube.com/channel/UCUCjR1zrPoj-rjAWHI5dz1w">
-              <i class="fa fa-youtube-play"></i>
-            </a>
-          </li>
-          <li>
-            <a title="Spotify" target="_blank" href="https://open.spotify.com/artist/0ALDwhf85oZxURyML49K9y?si=qoaeF0iGToO1f2kUduLfsQ">
-              <i class="fa fa-spotify"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="section2">
-      <div class="info">
-        <h2>Stay tuned!</h2>
-      </div>
-    </section>
-    <!--
-    <section class="section3">
-      <div class="bio-wrapper">
-        <p>
-          Slammer was formed by Lars Jahnson and Jocke Enbergh back in 1997 in Stockholm, Sweden.
-        </p>
-        <p>
-          The album "Paralyzed" was recorded and a 4-song EP was released but just as the album was to be released the record company and it's distribution decided to part ways and so did Lars and Jocke.
-        </p>
-        <p>
-          In 2021 Jocke teamed up with Dan Larsson (Guitar) and Patrik Andersen (Drums) and Slammer was reborn.
-        </p>
-        <p>
-          ...
-        </p>
-      </div>
-    </section>
-     -->
-    </div>
+  <div class="wrapper">
+    <div class="content">
+      <h1 class="title">SLAMMER</h1>
+      <ul class="social-media">
+        <li>
+          <a title="Facebook" target="_blank" href="https://www.facebook.com/slammersweden">
+            <i class="fa fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a title="Youtube" target="_blank" href="https://www.youtube.com/channel/UCUCjR1zrPoj-rjAWHI5dz1w">
+            <i class="fa fa-youtube-play"></i>
+          </a>
+        </li>
+        <li>
+          <a title="Spotify" target="_blank" href="https://open.spotify.com/artist/0ALDwhf85oZxURyML49K9y?si=qoaeF0iGToO1f2kUduLfsQ">
+            <i class="fa fa-spotify"></i>
+          </a>
+        </li>
+      </ul>
+   </div>
   </div>
 </body>
 </html>
